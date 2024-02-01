@@ -1,0 +1,85 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 1rem;
+  max-width: 30%;
+}
+.error404 {
+  background-image: linear-gradient(-45deg, #f43f6c, #56ab27);
+  animation: disco 5s infinite linear;
+}
+
+@keyframes disco {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.error404h2 {
+  font-family: cursive;
+  text-shadow: 2px 2px 5px #f43f6c;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.error404p {
+  color: #fff;
+  text-align: center;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error404a {
+  color: #f43f6c;
+  border: 1px solid #f43f6c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-decoration: none;
+  animation: tada 1s infinite ease-in-out;
+}
+
+@keyframes tada {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.main_nav {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+}
